@@ -24,6 +24,9 @@ export default defineConfig({
   site: "https://litlewy.github.io",
   base: "/my-blog",
   trailingSlash: "always",
+  image: {
+    remotePatterns: [{ protocol: "https" }],
+  }, 
   integrations: [
     tailwind(
         {
